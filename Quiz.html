@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+
+
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function(){
+        let corrects = document.querySelectorAll('.correct');
+        for(let i = 0; i < corrects.length; i++) {
+              corrects[i].addEventListener('click', function() {
+                  corrects[i].style.backgroundColor = 'green';
+
+          });
+        };
+          let incorrects = document.querySelectorAll('.incorrect');
+          for(let i = 0; i < incorrects.length; i++) {
+              incorrects[i].addEventListener('click', function() {
+                  incorrects[i].style.backgroundColor = 'red';
+
+          });
+        };
+      });
+
+  </script>
+
+  </head>
+<body class="table">
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-xxl">
+          <a class="navbar-brand" href="index.html">Головна</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="books.html">Мої улюблені книжки</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Journeys.html">Задачки на логіку</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AboutMe.html">Про мене</a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+      </header>
+
+      <div class="container">
+        <div class="section">
+            <hr>
+                <h4>В квартирі живуть домашні тварини: собаки та коти.
+                  З усіх тварин тільки одна не є собакою. При цьому всі тварини,крім однієї, - коти. Скільки всього котів та собак?</h4>
+                <button class="incorrect"> 2 собаки та 1 кіт </button>
+                <button class="correct"> 1 собака та 1 кіт </button>
+                <button class="incorrect"> 1 собака та 2 коти. </button>
+                <p id="feedback1"></p>
+         </div>
+
+        <div class="section">
+
+          <hr>
+              <h4>Дом має чотири стіни, при чому всі вони дивляться на південь. Навколо дому ходить ведмідь. Якого він кольору?</h4>
+              <button class="correct"> Білий </button>
+              <button class="incorrect"> Чорний </button>
+              <button class="incorrect"> Бурий </button>
+
+              <p id="feedback1"></p>
+        </div>
+        <div class="section">
+
+          <hr>
+              <h4>Скільки місяців в році мають 28 днів?</h4>
+              <button class="incorrect">0</button>
+              <button class="incorrect">1</button>
+              <button class="correct">12</button>
+
+              <p id="feedback1"></p>
+        </div>
+    </div>
+  </div>
+    <footer align="center">
+      <p>Make in 2022 by Sinuyk Alina</p>
+    </footer>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  </body>
+  </html>
